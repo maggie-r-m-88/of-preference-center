@@ -52,7 +52,7 @@
     <style>
 
       body{
-        background: #FFF;
+         background: #FFF url('images/43_edit.jpg') no-repeat center;
         background-attachment: fixed;
         background-size: cover;
         background-position: center center;
@@ -97,12 +97,15 @@
       }
 
       @media screen and (min-width: 940px){
-          body{
-            background: #FFF url('images/43_edit.jpg') no-repeat center;
-          }
+          
           .framework-container{
               float: left;
               max-width: 640px;
+          }
+      }
+      @media screen and (max-width: 940px){
+        body{
+           background: #FFF;
           }
       }
 
@@ -154,13 +157,15 @@
                       <li><input id="Dont_Recall_Signup" name="unsub_reason" type="radio" value="Don't recall signing up"><label for="Dont_Recall_Signup">Don't recall signing up</label></li>
                       <li>
                         <input id="Other" name="unsub_reason" type="radio" value="Other"><label for="Other">Other</label>
+                      </li>
+                      </ul>
                         <div>
                           <div class="medium-12 cell" id="Other_Reason" style="display:none;">
                             <label><input maxlength="50" name="other_reason" placeholder="50 characters left" type="text"></label>
                           </div>
                         </div>
-                      </li>
-                    </ul>
+                      
+                    
                   </fieldset>
                 </div>
                 <div class="row">
